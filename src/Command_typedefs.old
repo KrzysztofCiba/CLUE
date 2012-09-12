@@ -1,0 +1,20 @@
+/**
+ * @file Command_typedefs.h
+ * @author Krzysztof Ciba Krzysztof.Ciba@NOSPAMagh.edu.pl
+ * @date 18/12/2006
+ * @brief all possible typdefs in CLUE
+ */
+
+#ifndef COMMAND_TYPEDEFS_H
+#define COMMAND_TYPEDEFS_H
+
+#include <complex>
+
+typedef IntCmd    CLUE::Command<int>;
+typedef FloatCmd  CLUE::Command<float>;
+typedef DoubleCmd CLUE::Command<double>;
+typedef CmplxFCmd CLUE::Command< complex < float > >;
+typedef CmplxDCmd CLUE::Command< complex < double > >;
+typedef CharCmd   CLUE::Command<char*>;
+
+#endif // COMMAND_TYPEDEFS_H
